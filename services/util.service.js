@@ -25,7 +25,7 @@ export function getRandomInt(min, max) {
 
 export function generateRandomName() {
 	const names = ['Jhon', 'Wick', 'Strong', 'Dude', 'Yep', 'Hello', 'World', 'Power', 'Goku', 'Super', 'Hi', 'You', 'Are', 'Awesome']
-	const famName = ['star', 'kamikaza', 'family', 'eat', 'some', 'banana', 'brock', 'david', 'gun', 'walk', 'talk', 'car', 'wing', 'yang', 'snow', 'fire']
+	const famName = ['star', 'kamikaza', 'family', 'eat', 'some', 'banana', 'brock', 'david', 'gun', 'walk', 'talk', 'gig', 'wing', 'yang', 'snow', 'fire']
 	return names[Math.floor(Math.random() * names.length)] + famName[Math.floor(Math.random() * names.length)]
 }
 
