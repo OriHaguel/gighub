@@ -5,13 +5,14 @@ export async function getGigs(req, res) {
 	try {
 		const filterBy = {
 			txt: req.query.txt || '',
-			price: +req.query.price || 0,
+			price: req.query.price || '',
 			sortField: req.query.sortField || '',
 			daysToMake: req.query.daysToMake || '',
 			category: req.query.category || '',
 			sortDir: req.query.sortDir || 1,
 			pageIdx: req.query.pageIdx,
 		}
+
 		const gigs = await gigService.query(filterBy)
 		res.json(gigs)
 	} catch (err) {

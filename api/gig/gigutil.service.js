@@ -536,7 +536,7 @@ export function getGigImg(gigs) {
 		const images = imgCategories[category] || [];
 		const filteredGigs = gigs
 			.filter(gig => categoryKeywords.some(word => gig.title.includes(word)));
-		// console.log("🚀 ~ categoryKeys.forEach ~ filteredGigs:", filteredGigs)
+
 
 		filteredGigs.forEach((gig, index) => {
 			if (!gigMap.has(gig._id)) { // Use _id to ensure uniqueness
@@ -546,7 +546,7 @@ export function getGigImg(gigs) {
 		});
 	});
 
-	// console.log("🚀 ~ getGigImg ~ gigMap.values():", gigMap)
+
 	return Array.from(gigMap.values()); // Convert Map values to an array
 }
 

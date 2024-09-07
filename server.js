@@ -3,7 +3,7 @@ import path from 'path'
 import cors from 'cors'
 import express from 'express'
 import cookieParser from 'cookie-parser'
-
+import { orderRoutes } from './api/order/order.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
 import { reviewRoutes } from './api/review/review.routes.js'
@@ -41,6 +41,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/review', reviewRoutes)
 app.use('/api/gig', gigRoutes)
+app.use('/api/order', orderRoutes)
 
 setupSocketAPI(server)
 
@@ -54,6 +55,7 @@ app.get('/**', (req, res) => {
 })
 
 import { logger } from './services/logger.service.js'
+
 
 const port = process.env.PORT || 3030
 

@@ -1,5 +1,6 @@
 import { authService } from './auth.service.js'
 import { logger } from '../../services/logger.service.js'
+import { dbService } from '../../services/db.service.js'
 
 export async function login(req, res) {
 	const { username, password } = req.body
@@ -47,6 +48,25 @@ export async function logout(req, res) {
 		res.status(400).send({ err: 'Failed to logout' })
 	}
 }
+
+
+
+
+
+
+function _createUser(req, res) {
+	try {
+		// for (let i = 0; i < 10; i++) {
+
+
+		// }
+		// await authService.signup({ fullname: 'Puki Norma', username: 'puki', password: 'vdxvvx' })
+		// await authService.signup({ fullname: 'Master Adminov', username: 'admin', password: 'vxvxv' })
+		// await authService.signup({ fullname: 'Muki G', username: 'muki', password: '12xvxvxv3' })
+	} catch (err) {
+		res.status(400).send({ err: 'Failed to logout' })
+	}
+}
 export async function createUsers(req, res) {
 	try {
 		// for (let i = 0; i < 10; i++) {
@@ -60,3 +80,4 @@ export async function createUsers(req, res) {
 		res.status(400).send({ err: 'Failed to logout' })
 	}
 }
+

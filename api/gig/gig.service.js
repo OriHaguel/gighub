@@ -19,7 +19,7 @@ export const gigService = {
 }
 
 async function query(filterBy = { txt: '' }) {
-	// console.log("🚀 ~ query ~ filterBy:", filterBy)
+
 	try {
 		const criteria = _buildCriteria(filterBy)
 		const sort = _buildSort(filterBy)
@@ -27,7 +27,7 @@ async function query(filterBy = { txt: '' }) {
 		const collection = await dbService.getCollection('gig')
 
 		// var gigCursor = await collection.find()
-		// console.log("🚀 ~ query ~ gigCursor:", gigCursor)
+
 		var gigCursor = await collection.find(criteria)
 		// var gigCursor = await collection.find(criteria, { sort })
 
@@ -147,6 +147,7 @@ async function removeGigMsg(gigId, msgId) {
 // 	return criteria
 // }
 function _buildCriteria(filterBy) {
+
 	const criteria = {};
 
 	if (filterBy.txt) {
@@ -161,8 +162,32 @@ function _buildCriteria(filterBy) {
 
 
 	if (filterBy.price) {
-		criteria.price = { $gte: filterBy.price }
+		if (filterBy.price === 'low') {
+
+			criteria.price = { $lte: 100 }
+		}
+		else if (filterBy.price === 'mid') {
+			criteria.price = { $gte: 101, $lte: 500 };
+		} else if (filterBy.price === 'high') {
+			criteria.price = { $gte: 501 };
+		}
 	}
+	if (filterBy.daysToMake) {
+		if (filterBy.daysToMake === 'day') {
+
+			criteria.daysToMake = { $eq: 1 }
+		}
+		else if (filterBy.daysToMake === '3days') {
+			criteria.daysToMake = { $gt: 1, $lte: 3 };
+		} else if (filterBy.daysToMake === '7days') {
+			criteria.daysToMake = { $gt: 3, $lte: 7 };
+		}
+		else if (filterBy.daysToMake === 'anytime') {
+			criteria.daysToMake = { $gt: 7 };
+		}
+	}
+
+
 
 	if (filterBy.category && filterBy.category !== 'ai' && filterBy.category !== 'consulting') {
 
@@ -184,10 +209,17 @@ function _buildSort(filterBy) {
 }
 
 
+export async function getRandomUser() {
+	const usersCollection = await dbService.getCollection('user');
+
+	const randomUser = await usersCollection.aggregate([{ $sample: { size: 1 } }]).toArray();
 
 
+	return randomUser[0]; // since we are getting an array, return the first item
+}
+// getRandomUser()
 // _createGigs()
-function _createGig() {
+async function _createGig() {
 	const gig = { title: '', price: 0 }
 	gig.title = getRandomSentence()
 	gig.price = getRandomIntInclusive(15, 1000)
@@ -195,6 +227,14 @@ function _createGig() {
 	// gig._id = ObjectId.createFromHexString(makeId(24))
 	// gig._id = makeId()
 	gig._id = new ObjectId()
+	const randomUser = await getRandomUser()
+	const rate = getRandomIntInclusive(1, 5)
+	gig.owner = {
+		_id: randomUser._id.toString(),
+		fullname: randomUser.fullname,
+		imgUrl: randomUser.imgUrl,
+		rate,
+	}
 
 	// gig.aboutGig = getAboutGig()
 	// temp
@@ -219,14 +259,14 @@ function _createGig() {
 }
 
 async function _createGigs() {
-
-
 	try {
 		let gigs = []
 		const collection = await dbService.getCollection('gig')
 		for (var i = 0; i < 100; i++) {
 			gigs.push(_createGig())
 		}
+		gigs = await Promise.all(gigs)
+
 		const gigsWithImages = getGigImg(gigs);
 		await collection.insertMany(gigsWithImages)
 
@@ -235,7 +275,7 @@ async function _createGigs() {
 		logger.error('cannot insert gig', err)
 		throw err
 	}
-	// console.log("🚀 ~ _createGigs ~ gigs:", gigs)
+
 
 	// saveToStorage(STORAGE_KEY, gigsWithImages);
 }
