@@ -830,3 +830,53 @@ export function getImg() {
 	return '../src/assets/img/profile_clean.png'
 }
 
+export function getReviewContent() {
+	const sentences = [
+		'The quality of the work was exceptional. The client was extremely satisfied with the result.',
+		'Outstanding. The client loved it.',
+		'The project was completed on time, and the client was very satisfied with the final product.',
+		'Excellent service. The client was impressed.',
+		'The team was incredibly helpful and met all the client’s requirements. The product was perfect.',
+		'The client was impressed with the quality of the work, and the team was exceptionally responsive.',
+
+		// Paragraphs
+		'The client was thoroughly impressed with the quality of the work delivered by the team. They appreciated not only the final product but also the professionalism and dedication displayed throughout the project. From start to finish, the team was responsive, attentive to details, and committed to meeting all the client’s expectations. This level of service is rare, and it truly set the team apart in the client’s eyes.',
+		'The project was managed with utmost care and precision, which was evident in the final result. The team demonstrated exceptional skills in understanding and translating the client’s vision into a tangible product. The client noted that the communication throughout the project was seamless, making it easy to address any concerns or changes promptly. This smooth collaboration contributed significantly to the success of the project, and the client expressed a high level of satisfaction with the outcome.',
+		'From the initial consultation to the final delivery, the entire process was handled with remarkable efficiency. The client felt that their needs were thoroughly understood and met at every stage. The team’s ability to deliver a high-quality product within the agreed timeline was particularly appreciated. Moreover, the client highlighted that the support provided after the project’s completion was just as commendable, ensuring that any post-delivery issues were resolved swiftly and effectively.',
+
+		// Short answers
+		'Impressive work. No complaints.',
+		'On time. Perfect outcome.',
+		'Flow is good.',
+	]
+
+	return sentences[getRandomIntInclusive(0, sentences.length - 1)]
+}
+
+
+export function getReviewTime() {
+	const today = new Date()
+	const randomDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() - Math.floor(Math.random() * 365))
+
+	const timeDiff = Math.abs(today - randomDate)
+	const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24))
+
+	if (daysDiff < 7) {
+		return `${daysDiff} days`
+	} else if (daysDiff < 30) {
+		return `${Math.ceil(daysDiff / 7)} weeks`
+	} else {
+		return `${Math.ceil(daysDiff / 30)} months`
+	}
+}
+
+
+export function getSellerResponse() {
+	// const willResponse = getRandomBoolean() // temp
+	const willResponse = true
+	if (!willResponse) return
+
+	const sentences = ["We're thrilled to have you on board! We'll be in touch soon with more details.", "Thank you for choosing us! We'll be in touch with you shortly to discuss your requirements.", "We're excited to have you on board! We'll be in touch soon with more details.", "We're thrilled to have you on board! We'll be in touch soon with more details.", "Thank you for choosing us! We'll be in touch with you shortly to discuss your requirements."]
+
+	return sentences[getRandomIntInclusive(0, sentences.length - 1)]
+}

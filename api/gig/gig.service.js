@@ -4,7 +4,7 @@ import { logger } from '../../services/logger.service.js'
 import { makeId } from '../../services/util.service.js'
 import { dbService } from '../../services/db.service.js'
 import { asyncLocalStorage } from '../../services/als.service.js'
-import { categories, getCountry, getGigImg, getImg, getRandomIntInclusive, getRandomSentence } from './gigutil.service.js'
+import { categories, getCountry, getGigImg, getImg, getRandomIntInclusive, getRandomSentence, getReviewContent, getReviewTime, getSellerResponse } from './gigutil.service.js'
 
 const PAGE_SIZE = 3
 
@@ -235,7 +235,22 @@ async function _createGig() {
 		imgUrl: randomUser.imgUrl,
 		rate,
 	}
-
+	const anotherRandomUser = await getRandomUser()
+	gig.reviews = [
+		{
+			_id: makeId(),
+			txt: getReviewContent(),
+			rate,
+			createdAt: getReviewTime(),
+			IsRepeatClient: true,
+			SellerResponse: getSellerResponse(),
+			by: {
+				_id: anotherRandomUser._id.toString(),
+				fullname: anotherRandomUser.fullname,
+				imgUrl: anotherRandomUser.imgUrl,
+			}
+		}
+	]
 	// gig.aboutGig = getAboutGig()
 	// temp
 	// gig.owner = makeUserNameLorem()
