@@ -14,7 +14,7 @@ router.get('/', log, getOrders)
 // router.get('/:id', log, getOrderById)
 // router.post('/', log, addOrder)
 router.post('/', log, requireAuth, addOrder)
-// router.put('/:id', requireAuth, updateOrder)
+router.put('/:id', requireAuth, updateOrder)
 
 // router.delete('/:id', requireAuth, requireAdmin, removeOrder)
 

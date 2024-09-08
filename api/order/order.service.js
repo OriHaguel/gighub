@@ -10,6 +10,7 @@ const PAGE_SIZE = 3
 export const orderService = {
 	query,
 	add,
+	update
 }
 
 async function query(filterBy = { txt: '' }) {
@@ -21,7 +22,9 @@ async function query(filterBy = { txt: '' }) {
 		const collection = await dbService.getCollection('order')
 
 
+
 		var orderCursor = await collection.find(criteria)
+
 		// var orderCursor = await collection.find(criteria, { sort })
 
 		// if (filterBy.pageIdx !== undefined) {
@@ -29,6 +32,7 @@ async function query(filterBy = { txt: '' }) {
 		// }
 
 		const orders = orderCursor.toArray()
+
 		return orders
 	} catch (err) {
 		logger.error('cannot find orders', err)
@@ -49,6 +53,23 @@ async function add(order) {
 		throw err
 	}
 }
+
+async function update(order) {
+	const orderToSave = { status: order.status }
+
+	try {
+		const criteria = { _id: ObjectId.createFromHexString(order._id) }
+
+		const collection = await dbService.getCollection('order')
+		await collection.updateOne(criteria, { $set: orderToSave })
+
+		return order
+	} catch (err) {
+		logger.error(`cannot update order ${order._id}`, err)
+		throw err
+	}
+}
+
 
 function _buildCriteria(filterBy) {
 

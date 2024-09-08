@@ -48,14 +48,15 @@ export async function addOrder(req, res) {
 
 export async function updateOrder(req, res) {
 	const { loggedinUser, body: order } = req
-	const { _id: userId, isAdmin } = loggedinUser
+	const { _id: userId } = loggedinUser
 
-	if (!isAdmin && order.owner._id !== userId) {
-		res.status(403).send('Not your order...')
-		return
-	}
+	// if (order.owner._id !== userId) {
+	// 	res.status(403).send('Not your order...')
+	// 	return
+	// }
 
 	try {
+
 		const updatedOrder = await orderService.update(order)
 		res.json(updatedOrder)
 	} catch (err) {
