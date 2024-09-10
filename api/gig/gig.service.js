@@ -4,7 +4,7 @@ import { logger } from '../../services/logger.service.js'
 import { makeId } from '../../services/util.service.js'
 import { dbService } from '../../services/db.service.js'
 import { asyncLocalStorage } from '../../services/als.service.js'
-import { categories, getAboutGig, getCountry, getGigImg, getImg, getRandomBoolean, getRandomIntInclusive, getRandomSentence, getReviewContent, getReviewTime, getSellerResponse } from './gigutil.service.js'
+import { categories, getAboutGig, getCountry, getGigImg, getImg, getRandomBoolean, getRandomIntInclusive, getRandomReview, getRandomSentence, getReviewContent, getReviewTime, getSellerResponse } from './gigutil.service.js'
 
 const PAGE_SIZE = 3
 
@@ -217,6 +217,8 @@ export async function getRandomUser() {
 
 	return randomUser[0]; // since we are getting an array, return the first item
 }
+
+
 // getRandomUser()
 // _createGigs()
 async function _createGig() {
@@ -228,31 +230,112 @@ async function _createGig() {
 	// gig._id = makeId()
 	gig._id = new ObjectId()
 	const randomUser = await getRandomUser()
-	const rate = getRandomIntInclusive(1, 5)
+	const ownerRate = getRandomIntInclusive(1, 5)
 	gig.owner = {
 		_id: randomUser._id.toString(),
 		fullname: randomUser.fullname,
 		imgUrl: randomUser.imgUrl,
-		rate,
+		rate: ownerRate,
 		level: getRandomIntInclusive(1, 3),
 		pro: getRandomBoolean()
 	}
 	const anotherRandomUser = await getRandomUser()
+	const secondRandomUser = await getRandomUser()
+	const thirdRandomUser = await getRandomUser()
+	// gig.reviews = [
+	// 	{
+	// 		_id: makeId(),
+	// 		rate: getRandomIntInclusive(1, 5),
+	// 		txt: getRandomReview(gig.reviews[0].rate),
+	// 		createdAt: getReviewTime(),
+	// 		IsRepeatClient: true,
+	// 		SellerResponse: getSellerResponse(),
+	// 		by: {
+	// 			_id: anotherRandomUser._id.toString(),
+	// 			fullname: anotherRandomUser.fullname,
+	// 			imgUrl: anotherRandomUser.imgUrl,
+	// 		}
+	// 	},
+	// 	{
+	// 		_id: makeId(),
+	// 		rate: getRandomIntInclusive(1, 5),
+	// 		txt: getRandomReview(rate),
+	// 		createdAt: getReviewTime(),
+	// 		IsRepeatClient: true,
+	// 		SellerResponse: getSellerResponse(),
+	// 		by: {
+	// 			_id: secondRandomUser._id.toString(),
+	// 			fullname: secondRandomUser.fullname,
+	// 			imgUrl: secondRandomUser.imgUrl,
+	// 		}
+	// 	},
+	// 	{
+	// 		_id: makeId(),
+	// 		rate: getRandomIntInclusive(1, 5),
+	// 		txt: getRandomReview(rate),
+	// 		createdAt: getReviewTime(),
+	// 		IsRepeatClient: true,
+	// 		SellerResponse: getSellerResponse(),
+	// 		by: {
+	// 			_id: thirdRandomUser._id.toString(),
+	// 			fullname: thirdRandomUser.fullname,
+	// 			imgUrl: thirdRandomUser.imgUrl,
+	// 		}
+	// 	},
+
+	// ]
 	gig.reviews = [
-		{
-			_id: makeId(),
-			txt: getReviewContent(),
-			rate,
-			createdAt: getReviewTime(),
-			IsRepeatClient: true,
-			SellerResponse: getSellerResponse(),
-			by: {
-				_id: anotherRandomUser._id.toString(),
-				fullname: anotherRandomUser.fullname,
-				imgUrl: anotherRandomUser.imgUrl,
-			}
-		}
-	]
+		(() => {
+			const rate = getRandomIntInclusive(1, 5);
+			return {
+				_id: makeId(),
+				rate: rate,
+				txt: getRandomReview(rate),
+				createdAt: getReviewTime(),
+				IsRepeatClient: true,
+				SellerResponse: getSellerResponse(),
+				by: {
+					_id: anotherRandomUser._id.toString(),
+					fullname: anotherRandomUser.fullname,
+					imgUrl: anotherRandomUser.imgUrl,
+				}
+			};
+		})(),
+		(() => {
+			const rate = getRandomIntInclusive(1, 5);
+			return {
+				_id: makeId(),
+				rate: rate,
+				txt: getRandomReview(rate),
+				createdAt: getReviewTime(),
+				IsRepeatClient: true,
+				SellerResponse: getSellerResponse(),
+				by: {
+					_id: secondRandomUser._id.toString(),
+					fullname: secondRandomUser.fullname,
+					imgUrl: secondRandomUser.imgUrl,
+				}
+			};
+		})(),
+		(() => {
+			const rate = getRandomIntInclusive(1, 5);
+			return {
+				_id: makeId(),
+				rate: rate,
+				txt: getRandomReview(rate),
+				createdAt: getReviewTime(),
+				IsRepeatClient: true,
+				SellerResponse: getSellerResponse(),
+				by: {
+					_id: thirdRandomUser._id.toString(),
+					fullname: thirdRandomUser.fullname,
+					imgUrl: thirdRandomUser.imgUrl,
+				}
+			};
+		})(),
+	];
+
+
 	gig.aboutGig = getAboutGig()
 	// temp
 	// gig.owner = makeUserNameLorem()

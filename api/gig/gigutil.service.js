@@ -980,3 +980,49 @@ export function getAboutGig() {
 	]
 	return abouts[getRandomIntInclusive(0, abouts.length - 1)]
 }
+
+
+export function getRandomReview(rating) {
+	const badReviews = [
+		"This product is terrible.",
+		"I wouldn't recommend it.",
+		"Really bad experience.",
+		"Very disappointing.",
+		"It didn't work as expected.",
+		"Waste of money.",
+		"Poor quality, not worth it."
+	];
+
+	const goodReviews = [
+		"It's pretty good!",
+		"I enjoyed using this product.",
+		"Would recommend to others.",
+		"Solid performance for the price.",
+		"Satisfied with my purchase.",
+		"Met my expectations.",
+		"Works well, no issues so far."
+	];
+
+	const bestReviews = [
+		"This is the best product ever!",
+		"Absolutely loved it!",
+		"10/10, would buy again!",
+		"Exceeded all my expectations.",
+		"Top quality, worth every penny.",
+		"Highly recommend to everyone!",
+		"Couldn't be happier with this product."
+	];
+
+	switch (rating) {
+		case 1:
+		case 2:
+			return badReviews[Math.floor(Math.random() * badReviews.length)];
+		case 3:
+		case 4:
+			return goodReviews[Math.floor(Math.random() * goodReviews.length)];
+		case 5:
+			return bestReviews[Math.floor(Math.random() * bestReviews.length)];
+		default:
+			return "Invalid rating. Please provide a number between 1 and 5.";
+	}
+}
