@@ -28,8 +28,8 @@ async function query(filterBy = { txt: '' }) {
 
 		// var gigCursor = await collection.find()
 
-		var gigCursor = await collection.find(criteria)
-		// var gigCursor = await collection.find(criteria, { sort })
+		// var gigCursor = await collection.find(criteria)
+		var gigCursor = await collection.find(criteria, { sort })
 
 		// if (filterBy.pageIdx !== undefined) {
 		// 	gigCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
@@ -188,6 +188,10 @@ function _buildCriteria(filterBy) {
 	}
 
 
+	// if (filterBy.sortPrice) {
+	// 	criteria.price = { $gt: filterBy.price }
+	// }
+
 
 	if (filterBy.category && filterBy.category !== 'ai' && filterBy.category !== 'consulting') {
 
@@ -198,14 +202,24 @@ function _buildCriteria(filterBy) {
 		criteria.title = { $regex: categoryRegex }
 	}
 
+
+
 	return criteria;
 }
 
 
 
 function _buildSort(filterBy) {
-	if (!filterBy.sortField) return {}
-	return { [filterBy.sortField]: filterBy.sortDir }
+	const sort = {}
+	if (filterBy.sortPrice) {
+		if (filterBy.sortPrice === 'price high to low') {
+			sort.price = -1
+		}
+		if (filterBy.sortPrice === 'price low to high') {
+			sort.price = 1
+		}
+	}
+	return sort
 }
 
 
