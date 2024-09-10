@@ -263,6 +263,27 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_fjcp1e.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/5_h4ivae.webp'
 			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_pxpdti.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_uyyybp.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_nhag8g.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/1_l4kqsx.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_nddyio.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_uvn9tj.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_o8kmxq.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_hcqwri.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/tech_4_1_ydbquq.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/tech_4_3_qfio6h.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/tech_4_4_ndppln.webp'
+			],
 
 		],
 		//design
@@ -322,6 +343,60 @@ export function getGigImg(gigs) {
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_jy4af5.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_eg0mqf.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_llhqdi.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_dos0se.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_jais4s.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_wrrxol.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/8_xotlul.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/9_qijaz0.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/12_lmlmx9.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/13_d3n37o.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/14_jcoqeo.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/15_yotesc.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/14_s493u5.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/15_go9dhl.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/16_cgnano.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/17_f671gx.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/18_sazx9g.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/19_ouvuym.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/20_vl6rkg.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/21_lzz8se.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/13_vnnnhp.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/12_xnrk8y.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/11_nv0dm3.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/10_anksaj.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/9_hoyw4t.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/8_kb6lbj.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_r37ayg.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_dh0bi3.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_ph5fs0.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/123_dysibp.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_hj3sqn.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_igauqd.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_nto8dn.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_c9xsyt.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/5_gkivre.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_nocvyv.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_nnzvwn.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_q4qvex.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_n4qzby.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_toexu9.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_vmib00.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_hfcid6.webp'
 			],
 		],
 		//animation
@@ -525,6 +600,12 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_unknhc.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_cqa3bi.webp'
 			],
+		],
+		//AI
+		ai: [
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/1_u4up1q.webp'
+			]
 		]
 	}
 
@@ -879,4 +960,23 @@ export function getSellerResponse() {
 	const sentences = ["We're thrilled to have you on board! We'll be in touch soon with more details.", "Thank you for choosing us! We'll be in touch with you shortly to discuss your requirements.", "We're excited to have you on board! We'll be in touch soon with more details.", "We're thrilled to have you on board! We'll be in touch soon with more details.", "Thank you for choosing us! We'll be in touch with you shortly to discuss your requirements."]
 
 	return sentences[getRandomIntInclusive(0, sentences.length - 1)]
+}
+
+export function getAboutGig() {
+	const abouts = [
+		'This gig offers top-notch services tailored to meet your specific needs. Our team is dedicated to delivering high-quality results that exceed your expectations.',
+		'With years of experience in the industry, we bring a wealth of knowledge and expertise to every project. You can trust us to handle your requirements with professionalism.',
+		'We prioritize customer satisfaction above all else. Our goal is to ensure that you are completely happy with the final product, and we are committed to making any necessary adjustments.',
+		'We understand the importance of deadlines. Our efficient workflow allows us to deliver your project quickly without compromising on quality.',
+		'We offer competitive pricing for our services, ensuring that you receive great value for your investment. Quality service doesn’t have to break the bank!',
+		'Every project is unique, and we take the time to understand your specific needs. Our tailored solutions are designed to fit your requirements perfectly.',
+		'We believe in maintaining open lines of communication throughout the project. You will be updated regularly, and your feedback will always be valued.',
+		'In addition to the primary gig offerings, we provide a range of supplementary services to enhance your experience and ensure all your needs are met.',
+		'This gig is designed to offer services that are meticulously tailored to align with your unique needs and objectives. We understand that each project comes with its own set of challenges and requirements, and that’s why we take the time to get to know you and your business intimately. Our dedicated team is committed to delivering high-quality results that not only meet but exceed your expectations. From the initial consultation to the final delivery, every step of our process is crafted to ensure that your vision is brought to life with precision and care. Whether you’re looking for a one-time solution or ongoing support, we are here to provide you with the expertise and resources needed to achieve your goals. Our services are designed to be flexible and scalable, allowing us to adapt to your evolving needs over time. We pride ourselves on our ability to deliver results that are not just satisfactory but truly exceptional.',
+		'With a deep reservoir of experience accumulated over many years in the industry, we bring a profound level of knowledge and expertise to every project we undertake. Our team consists of seasoned professionals who have honed their skills through countless successful projects across various domains. This wealth of experience allows us to anticipate potential challenges before they arise and implement solutions that are both innovative and effective. You can trust us to handle your requirements with the utmost professionalism and care. We don’t just execute tasks; we offer strategic insights that can help you achieve your long-term objectives. Our industry experience also means we stay ahead of the curve with the latest trends and technologies, ensuring that your project is always at the cutting edge of innovation. We are dedicated to continuous learning and adapting to the evolving landscape, so you can be confident that your project will benefit from the latest best practices and insights.',
+		'Customer satisfaction is not just a priority for us—it’s the cornerstone of everything we do. We believe that the success of any project hinges on how well it meets the needs and expectations of our clients. That’s why we go the extra mile to ensure that you are completely satisfied with the final product. Our commitment to excellence means that we are always ready to make any necessary adjustments to achieve your desired outcome. We value your feedback and view it as an essential part of the creative process. By maintaining a close and collaborative relationship with you throughout the project, we are able to refine and perfect every detail, ensuring that the final result is something you can truly be proud of. Our dedication to your satisfaction doesn’t end with the delivery of the project; we are here to support you even after the work is complete, providing any additional assistance you may need to ensure long-term success.',
+		'We recognize that time is of the essence in today’s fast-paced world. That’s why we have developed an efficient workflow that allows us to deliver your project quickly without ever compromising on quality. Our team is skilled in managing tight deadlines and complex schedules, ensuring that your project is completed on time and to the highest standard. We understand that delays can have significant implications, which is why we prioritize timely delivery as a key component of our service. From the moment we begin working on your project, we implement a structured process that includes regular progress updates and milestone reviews. This approach not only keeps the project on track but also allows for any necessary adjustments to be made in real time. Our commitment to efficiency is matched by our dedication to quality, ensuring that you receive a final product that is both timely and exceptional in every way.',
+		'We believe that high-quality services should be accessible and affordable. That’s why we offer competitive pricing that provides great value for your investment. We understand that budget constraints are a reality for many clients, and we work diligently to ensure that our services deliver the best possible results without breaking the bank. Our pricing model is transparent, with no hidden fees or unexpected costs, so you can plan your project with confidence. We are committed to providing you with a service that balances cost and quality, ensuring that you receive maximum value for every dollar spent. In addition, we offer a range of packages and options that can be tailored to fit your specific budget and needs, allowing you to choose the level of service that best suits your project goals. Our goal is to make sure that you feel that every aspect of our service is worth the investment, from the initial consultation to the final delivery.',
+	]
+	return abouts[getRandomIntInclusive(0, abouts.length - 1)]
 }
