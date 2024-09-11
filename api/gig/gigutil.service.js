@@ -1026,3 +1026,32 @@ export function getRandomReview(rating) {
 			return "Invalid rating. Please provide a number between 1 and 5.";
 	}
 }
+
+
+export function generateRandomUsername() {
+	const adjectives = [
+		"Swift", "Silent", "Fierce", "Mighty", "Brave", "Wild", "Clever",
+		"Bold", "Fearless", "Loyal", "Sly", "Majestic", "Nimble",
+		"Radiant", "Stealthy", "Vigilant", "Gallant", "Daring", "Epic",
+		"Savage", "Serene", "Elusive", "Tenacious", "Vibrant"
+	];
+
+	const topics = [
+		"Lion", "Tiger", "Eagle", "Wolf", "Panther", "Falcon",
+		"Bear", "Shark", "Dragon", "Fox", "Raven", "Hawk",
+		"Cobra", "Leopard", "Griffin", "Stag", "Rhino", "Bison",
+		"Phoenix", "Serpent", "Owl", "Badger", "Jaguar", "Cheetah",
+		"Warrior", "Knight", "Wizard", "Ninja", "Samurai", "Assassin",
+		"Engineer", "Pilot", "Ranger", "Hunter", "Scholar", "Sage",
+		"Viking", "Nomad", "Alchemist", "Mage", "Guardian", "Paladin",
+		"Star", "Moon", "Blade", "Arrow", "Flame", "Storm", "Shadow"
+	];
+
+	const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+	const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+	const randomNumber = Math.floor(Math.random() * 1000);
+
+	return `${randomAdjective}${randomTopic}${randomNumber}`;
+}
+
+

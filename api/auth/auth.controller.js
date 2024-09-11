@@ -1,6 +1,7 @@
 import { authService } from './auth.service.js'
 import { logger } from '../../services/logger.service.js'
 import { dbService } from '../../services/db.service.js'
+import { generateRandomUsername, getImg, makeUserNameLorem } from '../gig/gigutil.service.js'
 
 export async function login(req, res) {
 	const { username, password } = req.body
@@ -54,30 +55,30 @@ export async function logout(req, res) {
 
 
 
-function _createUser(req, res) {
+// export async function createUsers(req, res) {
+// 	try {
+// 		// for (let i = 0; i < 10; i++) {
+
+
+// 		// }
+// 		// await authService.signup({ fullname: 'Puki Norma', username: 'puki', password: 'vdxvvx' })
+// 		// await authService.signup({ fullname: 'Master Adminov', username: 'admin', password: 'vxvxv' })
+// 		// await authService.signup({ fullname: 'Muki G', username: 'muki', password: '12xvxvxv3' })
+// 	} catch (err) {
+// 		res.status(400).send({ err: 'Failed to logout' })
+// 	}
+// }
+// _createUsers()
+async function _createUsers() {
 	try {
-		// for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 10; i++) {
 
 
-		// }
-		// await authService.signup({ fullname: 'Puki Norma', username: 'puki', password: 'vdxvvx' })
-		// await authService.signup({ fullname: 'Master Adminov', username: 'admin', password: 'vxvxv' })
-		// await authService.signup({ fullname: 'Muki G', username: 'muki', password: '12xvxvxv3' })
-	} catch (err) {
-		res.status(400).send({ err: 'Failed to logout' })
+			await authService.signup({ fullname: makeUserNameLorem(), username: generateRandomUsername(), password: '123', imgUrl: getImg() })
+		}
+	} catch (error) {
+		console.log("🚀 ~ createUsers ~ error:", error)
+
 	}
+
 }
-export async function createUsers(req, res) {
-	try {
-		// for (let i = 0; i < 10; i++) {
-
-
-		// }
-		// await authService.signup({ fullname: 'Puki Norma', username: 'puki', password: 'vdxvvx' })
-		// await authService.signup({ fullname: 'Master Adminov', username: 'admin', password: 'vxvxv' })
-		// await authService.signup({ fullname: 'Muki G', username: 'muki', password: '12xvxvxv3' })
-	} catch (err) {
-		res.status(400).send({ err: 'Failed to logout' })
-	}
-}
-
