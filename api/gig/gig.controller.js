@@ -9,6 +9,7 @@ export async function getGigs(req, res) {
 			sortField: req.query.sortField || '',
 			daysToMake: req.query.daysToMake || '',
 			category: req.query.category || '',
+			sortPrice: req.query.sortPrice || '',
 			sortDir: req.query.sortDir || 1,
 			pageIdx: req.query.pageIdx,
 		}
