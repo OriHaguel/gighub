@@ -312,7 +312,8 @@ async function _createGig() {
 					_id: anotherRandomUser._id.toString(),
 					fullname: anotherRandomUser.fullname,
 					imgUrl: anotherRandomUser.imgUrl,
-				}
+				},
+				country: getCountry()
 			};
 		})(),
 		(() => {
@@ -328,7 +329,8 @@ async function _createGig() {
 					_id: secondRandomUser._id.toString(),
 					fullname: secondRandomUser.fullname,
 					imgUrl: secondRandomUser.imgUrl,
-				}
+				},
+				country: getCountry()
 			};
 		})(),
 		(() => {
@@ -344,11 +346,13 @@ async function _createGig() {
 					_id: thirdRandomUser._id.toString(),
 					fullname: thirdRandomUser.fullname,
 					imgUrl: thirdRandomUser.imgUrl,
-				}
+				},
+				country: getCountry()
 			};
 		})(),
 	];
 
+	// gig.reviewCountry = getCountry()
 
 	gig.aboutGig = getAboutGig()
 	// temp
@@ -361,7 +365,6 @@ async function _createGig() {
 	// reviews
 	// gig.reviewName = makeUserNameLorem()
 	gig.reviewImage = getImg()
-	gig.reviewCountry = getCountry()
 	// gig.reviewContent = getReviewContent()
 	// gig.reviewRating = getRandomIntInclusive(0, 5)
 	// gig.reviewTime = getReviewTime()
