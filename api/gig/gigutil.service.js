@@ -951,8 +951,12 @@ export function getCountry() {
 }
 
 export function getImg() {
-	return '../src/assets/img/profile_clean.png'
+	const profilePicApi = 'https://xsgames.co/randomusers/assets/avatars/'
+	const gender = Math.random() < 0.5 ? 'male/' : 'female/'
+	const number = getRandomIntInclusive(1, 60)
+	return `${profilePicApi}${gender}${number}.jpg`
 }
+
 
 export function getReviewContent() {
 	const sentences = [
