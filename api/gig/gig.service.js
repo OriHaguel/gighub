@@ -212,10 +212,10 @@ function _buildCriteria(filterBy) {
 function _buildSort(filterBy) {
 	const sort = {}
 	if (filterBy.sortPrice) {
-		if (filterBy.sortPrice === 'price high to low') {
+		if (filterBy.sortPrice === 'Price High to Low') {
 			sort.price = -1
 		}
-		if (filterBy.sortPrice === 'price low to high') {
+		if (filterBy.sortPrice === 'Price Low to High') {
 			sort.price = 1
 		}
 	}
@@ -364,7 +364,8 @@ async function _createGig() {
 	gig.ownerImage = getImg()
 	// reviews
 	// gig.reviewName = makeUserNameLorem()
-	gig.reviewImage = getImg()
+	// gig.reviewImage = getImg()
+
 	// gig.reviewContent = getReviewContent()
 	// gig.reviewRating = getRandomIntInclusive(0, 5)
 	// gig.reviewTime = getReviewTime()

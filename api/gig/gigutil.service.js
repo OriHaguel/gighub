@@ -897,7 +897,7 @@ export function getGigImg(gigs) {
 // }
 
 export function getCountry() {
-	const countries = ['USA', 'UK', 'Canada', 'Australia', 'France', 'Germany', 'Japan', 'India', 'China', 'Russia', 'Italy', 'Spain', 'Netherlands', 'Belgium', 'Switzerland', 'Austria', 'Poland', 'Greece', 'Romania', 'Portugal', 'Turkey', 'Ireland', 'Denmark', 'Sweden', 'Norway', 'Finland', 'Iceland', 'Luxembourg', 'Malta', 'Cyprus', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Hungary', 'Slovenia', 'Croatia', 'Bosnia and Herzegovina', 'Serbia', 'Montenegro', 'Kosovo', 'Macedonia']
+	const countries = ['USA', 'UK', 'Canada', 'Australia', 'France', 'Germany', 'Japan', 'India', 'China', 'Russia', 'Italy', 'Spain', 'Netherlands', 'Belgium', 'Switzerland', 'Austria', 'Poland', 'Greece', 'Romania', 'Portugal', 'Turkey', 'Ireland', 'Denmark', 'Sweden', 'Norway', 'Finland', 'Iceland', 'Luxembourg', 'Malta', 'Cyprus', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Hungary', 'Slovenia', 'Croatia', 'Bosnia and Herzegovina', 'Serbia', 'Montenegro', 'Macedonia']
 	// const flags = ['🇺🇸', '🇬🇧', '🇨🇦', '🇦🇺', '🇫🇷', '🇩🇪', '🇯🇵', '🇮🇳', '🇨🇳', '🇷🇺', '🇮🇹', '🇪🇸', '🇳🇱', '🇧🇪', '🇨🇭', '🇦🇹', '🇵🇱', '🇬🇷', '🇷🇴', '🇵🇹', '🇹🇷', '🇮🇪', '🇩🇰', '🇸🇪', '🇳🇴', '🇫🇮', '🇮🇸', '🇱🇺', '🇲🇹', '🇨🇾', '🇸🇰', '🇪🇪', '🇱🇻', '🇱🇹', '🇭🇺', '🇸🇮', '🇭🇷', '🇧🇦', '🇷🇸', '🇲🇪', '🇽🇰', '🇲🇰']
 	const flags = [
 		'https://flagsapi.com/US/flat/64.png',
