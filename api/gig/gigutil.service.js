@@ -63,11 +63,24 @@ export function makeUserNameLorem() {
 	]
 
 	const lastNames = [
-		"Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis",
-		"Garcia", "Rodriguez", "Martinez", "Anderson", "Taylor", "Thomas",
-		"Moore", "Jackson", "White", "Harris", "Martin", "Thompson", "Martinez",
-		"Clark", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "King",
-		"Wright", "Scott"
+		// English/American
+		"Smith", "Johnson", "Brown", "Taylor", "Wilson", "Adams", "Baker", "Carter",
+		"Cooper", "Evans", "Edwards", "Foster", "Gray", "Green", "Hill", "Hughes",
+		"Mitchell", "Parker", "Phillips", "Roberts", "Russell", "Stewart", "Turner",
+		"Ward", "Wood",
+
+		// Spanish/Latino
+		"Hernandez", "Gonzalez", "Perez", "Sanchez", "Ramirez", "Flores", "Rivera",
+		"Torres", "Diaz", "Morales",
+
+		// Italian
+		"Rossi", "Romano", "Costa", "Greco", "Lombardi",
+
+		// French
+		"Dupont", "Moreau", "Lefevre", "Dubois", "Fontaine",
+
+		// German
+		"Müller", "Schmidt", "Schneider", "Fischer", "Weber"
 	]
 
 	const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)]
