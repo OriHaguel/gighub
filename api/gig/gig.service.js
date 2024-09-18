@@ -380,7 +380,7 @@ async function _createGigs() {
 	try {
 		let gigs = []
 		const collection = await dbService.getCollection('gig')
-		for (var i = 0; i < 100; i++) {
+		for (var i = 0; i < 150; i++) {
 			gigs.push(_createGig())
 		}
 		gigs = await Promise.all(gigs)

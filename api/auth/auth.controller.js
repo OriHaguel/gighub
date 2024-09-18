@@ -71,7 +71,7 @@ export async function logout(req, res) {
 // _createUsers()
 async function _createUsers() {
 	try {
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < 30; i++) {
 
 
 			await authService.signup({ fullname: makeUserNameLorem(), username: generateRandomUsername(), password: '123', imgUrl: getImg() })

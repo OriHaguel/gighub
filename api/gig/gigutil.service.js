@@ -644,23 +644,23 @@ export function getGigImg(gigs) {
 		]
 	}
 
-	const categoryKeys = Object.keys(categories);
-	const gigMap = new Map(); // Use a Map to track gigs and avoid duplicates
+	const categoryKeys = Object.keys(categories)
+	const gigMap = new Map() // Use a Map to track gigs and avoid duplicates
 
 	categoryKeys.forEach((category) => {
-		const categoryKeywords = categories[category];
-		const images = imgCategories[category] || [];
+		const categoryKeywords = categories[category]
+		const images = imgCategories[category] || []
 		const filteredGigs = gigs
-			.filter(gig => categoryKeywords.some(word => gig.title.includes(word)));
+			.filter(gig => categoryKeywords.some(word => gig.title.includes(word)))
 
 
 		filteredGigs.forEach((gig, index) => {
 			if (!gigMap.has(gig._id)) { // Use _id to ensure uniqueness
-				const img = images[index] || []; // Use default empty array if index exceeds images length
-				gigMap.set(gig._id, { ...gig, img });
+				const img = images[index] || [] // Use default empty array if index exceeds images length
+				gigMap.set(gig._id, { ...gig, img })
 			}
-		});
-	});
+		})
+	})
 
 
 	return Array.from(gigMap.values()); // Convert Map values to an array

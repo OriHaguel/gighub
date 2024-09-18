@@ -35,6 +35,7 @@ export async function getOrderById(req, res) {
 
 export async function addOrder(req, res) {
 	const { loggedinUser, body: order } = req
+	console.log("🚀 ~ addOrder ~ loggedinUser:", loggedinUser)
 
 	try {
 		order.buyer = loggedinUser
