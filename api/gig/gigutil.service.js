@@ -359,7 +359,7 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_gjduqq.webp',
 				'https://res.cloudinary.com/dofblayxi/video/upload/bcaisfxgenbu3vwbwppt_eq8j07.mp4',
 				'https://res.cloudinary.com/dofblayxi/image/upload/PDF_6_1__dhtgfa_m1gusf.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_jafpel,webp',
+				// 'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_jafpel,webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_4_a28sh9.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_5_mb47au.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_1_f7xzkz.webp',
