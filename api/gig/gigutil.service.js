@@ -204,7 +204,7 @@ function getRandomWord(wordList) {
 
 
 export function getGigImg(gigs) {
-	//~70+ gigs
+	//~75+ gigs
 	const imgCategories = {
 		//tech
 		programming: [
@@ -280,16 +280,10 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_uyyybp.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_nhag8g.webp'
-			],
-			[
 				'https://res.cloudinary.com/dofblayxi/video/upload/1_l4kqsx.mp4',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_nddyio.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_uvn9tj.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/4_o8kmxq.webp'
-			],
-			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_hcqwri.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/tech_4_1_ydbquq.webp',
@@ -309,25 +303,26 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/software-and-games-development-in-java-javafx_2_vl1vie.webp'
 			],
 			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/pgzruaedhn3lokcbz9fv_xmosef.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_g6vfxx.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_2_ocwkx7.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_1_zrmy5j.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_hcqwri.webp'
+			],
+			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/develop-any-custom-software-or-app-for-any-platform_df9x2b.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/be-your-python-superhero-script-code-web-scraping-automation_ehxlku.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/video/upload/pgzruaedhn3lokcbz9fv_xmosef.mp4',
-				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_g6vfxx.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_2_ocwkx7.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/create-a-windows-desktop-application-for-your-business_1_zrmy5j.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_nhag8g.webp'
 			],
 		],
 		//design
 		graphics: [
-			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_z9rrab.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_veg6zj.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/3_cdadns.webp'
-			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_d52ipm.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_dqbi2y.webp',
@@ -343,24 +338,45 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/6_o6apzw.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/0_a5v53p.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/00_ejnxb4.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/000_ytqxle.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-photoshop-web-template-psd-website-psd-to-wordpress_gce85y.webp',
+				'https://res.cloudinary.com/dofblayxi/video/upload/fwi7whujykap9hokvni1_w5qqid.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-photoshop-web-template-psd-website-psd-to-wordpress_1_eiyrqb.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-photoshop-web-template-psd-website-psd-to-wordpress_msd4bg.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_wpgskd.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_jto6cd.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/3_oqg4j7.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/4_hzy27x.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/5_in6nn7.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-and-develop-clean-and-modern-business-website_x7wy8h.webp',
+				'https://res.cloudinary.com/dofblayxi/video/upload/HR_Website_tc2kir.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/Notary_website_p6l6f5.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/Website_video_jbmukp.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/screencast-caringangelsmn_com-2024_09_06-02_23_01_vuixnf.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/screencast-mn11_simplysiephotography_com-2024_09_09-17_00_03_solbxo.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/screencast-mn5_simplysiephotography_com-2024_09_18-14_40_42_o7osym.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/screencast-ammar_webclientia_com-2024_09_07-22_55_40_xfnlcp.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/screencast-nitarealtor_com-2024_09_10-15_34_43_n9kjy5.mp4',
+				'https://res.cloudinary.com/dofblayxi/video/upload/Kids_website_video_q5jpmw.mp4',
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_u0epwq.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_hf811f.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_gjduqq.webp',
+				'https://res.cloudinary.com/dofblayxi/video/upload/bcaisfxgenbu3vwbwppt_eq8j07.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/PDF_6_1__dhtgfa_m1gusf.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_jafpel,webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_4_a28sh9.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_5_mb47au.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_1_f7xzkz.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_1_z0aqpd.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/PDF_7_compressed_wgngsg_hrrnok.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/design-a-brand-identity_3_ey9pzl.webp',
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_bbxhrz.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_fsivb3.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_xesca4.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_1_iqnnh8.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_1_j9fy1b.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/VOLT_APPAREL_compressed_ochd6x_ludfhe.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_nhsbyn.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_3_wzbh6o.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_2_yuyjjv.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-professional-handwritten-real-handmade-signature-logo-design_2_eqo6aw.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/delta_volt_que2me_lmdlo7.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/video/upload/1_te6haz.mp4',
@@ -371,13 +387,16 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/6_fsplen.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/video/upload/1_polrvq.mp4',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_qann3f.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/3_qrf9vv.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/0_a5v53p.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/00_ejnxb4.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/000_ytqxle.webp'
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_jy4af5.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_eg0mqf.webp'
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_wpgskd.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_jto6cd.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_oqg4j7.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/4_hzy27x.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/5_in6nn7.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_llhqdi.webp',
@@ -432,6 +451,28 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_toexu9.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_vmib00.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/4_hfcid6.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/1_polrvq.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_qann3f.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_qrf9vv.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_jy4af5.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_eg0mqf.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_z9rrab.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_veg6zj.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_cdadns.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_u0epwq.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_hf811f.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_bbxhrz.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_fsivb3.webp'
 			],
 		],
 		//animation
