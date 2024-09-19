@@ -95,7 +95,7 @@ export function getPlan() {
 }
 
 export const categories = {
-	programming: ['web', 'app', 'software', 'coding', 'algorithms', 'JavaScript', 'Python', 'backend', 'frontend', 'database'],
+	programming: ['web', 'apps', 'software', 'coding', 'algorithms', 'JavaScript', 'Python', 'backend', 'frontend', 'database'],
 	graphics: ['logo', 'UI', 'graphic', 'illustration', 'branding', 'typography', 'color', 'layout', 'icons', 'photoshop'],
 	digital: ['SEO', 'hacking', 'social', 'email', 'PPC', 'analytics', 'ads', 'keywords', 'campaign', 'influencers'],
 	writing: ['copywriting', 'modern', 'technical', 'translation', 'proofreading', 'copyediting', 'blogging', 'articles', 'scripts', 'localization'],
