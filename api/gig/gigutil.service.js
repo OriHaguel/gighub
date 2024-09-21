@@ -204,7 +204,7 @@ function getRandomWord(wordList) {
 
 
 export function getGigImg(gigs) {
-	//~75+ gigs
+	//~90+ gigs
 	const imgCategories = {
 		//tech
 		programming: [
@@ -379,6 +379,17 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/delta_volt_que2me_lmdlo7.webp'
 			],
 			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_igdsrb.webp',
+				'https://res.cloudinary.com/dofblayxi/video/upload/Logo_Final_1_dih8q4.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_1_pyblzy.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_2_edxxcp.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_compressed_jubqdc_lh8jhc.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_hrzmom.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_5_genp6d.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_4_f0hl8e.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/create-minimalist-logo-and-brand-identity-with-complete-branding-kit_6_czdsdp.webp'
+			],
+			[
 				'https://res.cloudinary.com/dofblayxi/video/upload/1_te6haz.mp4',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_hm8zb2.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_ucztjn.webp',
@@ -505,10 +516,19 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/4_oqao3n.webp'
 			],
 			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-premium-color-grading-and-color-correction-for-your-videos_wqyicf.webp',
+				'https://res.cloudinary.com/dofblayxi/video/upload/sufyphzrxcmhwpvjhaam_k76ecr.mp4'
+			],
+			[
 				'https://res.cloudinary.com/dofblayxi/video/upload/1_ghmtv3.mp4',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_nhehgy.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_vkckns.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/4_td9ey7.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/m4ugkybfvta74loaen92_wkfpfc.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-an-animated-gif-for-logo-icon-and-banners_nx6r0w.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-an-animated-gif-for-logo-icon-and-banners_exw94k.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/video/upload/samples/sea-turtle.mp4',
@@ -538,19 +558,26 @@ export function getGigImg(gigs) {
 
 			],
 			[
-				'https://res.cloudinary.com/dofblayxi/image/upload/1_zmsai2.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/2_xcvsns.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/3_lnpodr.webp'
-			],
-			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_qpzm75.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_llghjy.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_helgmv.webp'
 			],
 			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/bkvbasajzsdx0b4hkzzq_lgdw1b.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/write-technology-related-articles_2_aeqek4.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/write-technology-related-articles_1_dhfjxs.webp',
+			],
+			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_ll85yj.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_cj48yf.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/4_ozcalj.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/write-script-for-your-explainer-video-of-length-1-min_j1bnih.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/breakdown-your-short-film-tv-pilot-or-feature-film_jquhs1.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/breakdown-your-short-film-tv-pilot-or-feature-film_1_uinttu.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_cp9rgx.webp',
@@ -565,6 +592,11 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_lploc4.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_fmwkyq.webp'
 			],
+			[
+				'https://res.cloudinary.com/dofblayxi/image/upload/1_zmsai2.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/2_xcvsns.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/3_lnpodr.webp'
+			],
 		],
 		//marketing
 		digital: [
@@ -578,6 +610,18 @@ export function getGigImg(gigs) {
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_seypam.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/zx8bndgh3nkzxpcm6hk3_nyc4rf.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/be-your-youtube-channel-growth-manager-video-seo-expert_qxihul.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/be-your-youtube-channel-growth-manager-video-seo-expert_ufuls1.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/be-your-youtube-channel-growth-manager-video-seo-expert_1_ttwmgu.webp'
+			],
+			[
+				'https://res.cloudinary.com/dofblayxi/video/upload/gomazvkwzkmcmpjmgtn1_klshw3.mp4',
+				'https://res.cloudinary.com/dofblayxi/image/upload/setup-facebook-business-page_ws1bng.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/setup-facebook-business-page_y0z1gr.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/setup-facebook-business-page_1_xxterf.webp'
 			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_kcupoa.webp',
@@ -653,9 +697,10 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_kssgez.webp'
 			],
 			[
-				// 'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_wmnm7v.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_yy3pv2.webp',
-				'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_1_jduj12.webp'],
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-market-research-for-any-product_kkuzbd.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-market-research-for-any-product_1_aig6fg.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/do-market-research-for-any-product_2_fmm0ar.webp'
+			],
 			[
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_bcpqls.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_fgvas5.webp'
@@ -667,6 +712,11 @@ export function getGigImg(gigs) {
 				'https://res.cloudinary.com/dofblayxi/image/upload/1_n5fw3d.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/2_rtzhfe.webp',
 				'https://res.cloudinary.com/dofblayxi/image/upload/3_c6obj1.webp'
+			],
+			[
+				// 'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_wmnm7v.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_yy3pv2.webp',
+				'https://res.cloudinary.com/dofblayxi/image/upload/get-your-ein-number-from-irs-for-us-and-non-us-citizens_1_jduj12.webp'
 			],
 		],
 		//legal
