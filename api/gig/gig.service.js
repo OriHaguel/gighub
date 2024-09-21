@@ -234,7 +234,7 @@ export async function getRandomUser() {
 
 
 // getRandomUser()
-_createGigs()
+// _createGigs()
 async function _createGig() {
 	const gig = { title: '', price: 0 }
 	gig.title = getRandomSentence()
