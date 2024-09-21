@@ -12,6 +12,13 @@ export function makeId(prefix, length = 10) {
 	return txt
 }
 
+export function getRandomNumber() {
+	// Generate a random number between 1 and 5, with one decimal place
+	return (Math.random() * (5 - 1) + 1).toFixed(1);
+}
+
+
+
 
 export function getRandomIntInclusive(min, max) {
 	min = Math.ceil(min)
@@ -1136,7 +1143,10 @@ export function getRandomReview(rating) {
 		"Couldn't be happier with this product."
 	];
 
-	switch (rating) {
+	// Round the rating to the nearest whole number
+	const roundedRating = Math.round(rating);
+
+	switch (roundedRating) {
 		case 1:
 		case 2:
 			return badReviews[Math.floor(Math.random() * badReviews.length)];
