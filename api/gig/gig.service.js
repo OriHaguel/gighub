@@ -4,7 +4,7 @@ import { logger } from '../../services/logger.service.js'
 import { makeId } from '../../services/util.service.js'
 import { dbService } from '../../services/db.service.js'
 import { asyncLocalStorage } from '../../services/als.service.js'
-import { categories, getAboutGig, getCountry, getGigImg, getImg, getRandomBoolean, getRandomIntInclusive, getRandomReview, getRandomSentence, getReviewContent, getReviewTime, getSellerResponse } from './gigutil.service.js'
+import { categories, getAboutGig, getCountry, getGigImg, getImg, getRandomBoolean, getRandomIntInclusive, getRandomNumber, getRandomReview, getRandomSentence, getReviewContent, getReviewTime, getSellerResponse } from './gigutil.service.js'
 
 const PAGE_SIZE = 3
 
@@ -244,7 +244,7 @@ async function _createGig() {
 	// gig._id = makeId()
 	gig._id = new ObjectId()
 	const randomUser = await getRandomUser()
-	const ownerRate = getRandomIntInclusive(1, 5)
+	const ownerRate = getRandomNumber()
 	gig.owner = {
 		_id: randomUser._id.toString(),
 		fullname: randomUser.fullname,
@@ -300,7 +300,7 @@ async function _createGig() {
 	// ]
 	gig.reviews = [
 		(() => {
-			const rate = getRandomIntInclusive(1, 5);
+			const rate = getRandomNumber();
 			return {
 				_id: makeId(),
 				rate: rate,
@@ -317,7 +317,7 @@ async function _createGig() {
 			};
 		})(),
 		(() => {
-			const rate = getRandomIntInclusive(1, 5);
+			const rate = getRandomNumber();
 			return {
 				_id: makeId(),
 				rate: rate,
@@ -334,7 +334,7 @@ async function _createGig() {
 			};
 		})(),
 		(() => {
-			const rate = getRandomIntInclusive(1, 5);
+			const rate = getRandomNumber();
 			return {
 				_id: makeId(),
 				rate: rate,
